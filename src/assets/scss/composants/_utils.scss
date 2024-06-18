@@ -1,0 +1,149 @@
+.dpn-cursor-pointer {
+  cursor: pointer;
+}
+.dpn-display-none {
+  display: none !important;
+}
+.dpn-without-margin {
+  margin: 0 !important;
+}
+.dpn-without-padding {
+  padding: 0 !important;
+}
+.dpn-field-required {
+  color: var(--dpn-danger);
+  font-weight: 500;
+  left: 5px;
+  position: relative;
+}
+.dpn-profile-img {
+  display: grid;
+  .dpn-btn-upload {
+    text-align: center;
+    top: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+.dpn-fw-bold {
+  font-weight: bold !important;
+}
+.dpn-btn-remove-image {
+  .ant-badge-count {
+    margin: 15px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.dpn-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dpn-space-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dpn-horizontal-divider {
+  border-left: 0.1rem solid var(--dpn-sliver);
+  width: 0;
+  margin: 0.5rem 6.4rem;
+}
+
+.dpn-text-underline {
+  text-decoration: underline !important;
+}
+
+.dpn-not-text-underline {
+  text-decoration: none !important;
+}
+
+.dpn-background-animation {
+  background: linear-gradient(
+    -45deg,
+    var(--dpn-primary),
+    var(--dpn-secondary),
+    var(--dpn-sliver),
+    var(--dpn-default)
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.dpn-space-between {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.dpn-space-end {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.dpn-space-center-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.dpn-space-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.dpn-typography {
+  margin-bottom: 0.25em !important;
+}
+
+.dct-divider-horizontal {
+  margin: 10px 0 20px !important;
+}
+
+.dpn-steps-form {
+  border: 1px solid var(--dpn-sliver);
+  box-shadow: var(--dpn-box-shadow);
+  border-radius: var(--dpn-border-radius-one);
+  padding: 20px;
+  margin: 0 30px;
+}
+
+.dpn-title {
+  font-size: 18px !important;
+}
+
+// Bootstrap
+.d-grid {
+  display: grid !important;
+}
+
+.dpn-cta-action {
+  background-color: var(--dpn-white);
+  border-radius: 21px;
+  padding: 5px;
+}
+
+.dpn-btn-bottom {
+  bottom: 15px;
+  position: absolute;
+}
+
+.dpn-text-center {
+  text-align: center;
+  .ant-input {
+    text-align: center !important;
+  }
+}
+
+.dpn-logo {
+  width: 25%;
+}

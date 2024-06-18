@@ -1,0 +1,15 @@
+.dpn-home-top {
+  @include small() {
+    display: none;
+  }
+  .dpn-home-top-title {
+    font-size: 5pc;
+    letter-spacing: 2px;
+  }
+  .dpn-home-top-description {
+    font-style: italic;
+    font-size: 34px;
+    letter-spacing: 0.8px;
+    text-decoration: overline;
+  }
+}

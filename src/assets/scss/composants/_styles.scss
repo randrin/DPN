@@ -1,0 +1,285 @@
+// Colors
+.dpn-primary {
+  color: var(--dpn-primary) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-secondary {
+  color: var(--dpn-secondary) !important;
+}
+.dpn-danger {
+  color: var(--dpn-danger) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-tomato {
+  color: var(--dpn-tomato) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-success {
+  color: var(--dpn-success) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-sliver {
+  color: var(--dpn-sliver) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-white {
+  color: var(--dpn-white) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-warning {
+  color: var(--dpn-warning) !important;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+
+// Backgournd
+.dpn-background-primary {
+  background-color: var(--dpn-primary) !important;
+}
+.dpn-background-secondary {
+  background-color: var(--dpn-secondary) !important;
+}
+.dpn-background-danger {
+  background-color: var(--dpn-danger) !important;
+}
+.dpn-background-tomato {
+  background-color: var(--dpn-tomato) !important;
+  border: 0;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-background-success {
+  background-color: var(--dpn-success) !important;
+  border: 0;
+  &:hover {
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+}
+.dpn-background-sliver {
+  background-color: var(--dpn-sliver) !important;
+}
+.dpn-background-white {
+  background-color: var(--dpn-white) !important;
+}
+.dpn-background-white-smoke {
+  background-color: var(--dpn-white-smoke) !important;
+}
+
+// Borders
+.dpn-border-primary {
+  border: 1px solid var(--dpn-primary) !important;
+}
+.dpn-dashed-border-primary {
+  border: 1px dashed var(--dpn-primary) !important;
+}
+.dpn-border-top-primary {
+  border-top-color: var(--dpn-primary) !important;
+}
+.dpn-border-top-secondary {
+  border-top-color: var(--dpn-secondary) !important;
+}
+.dpn-border-top-sliver {
+  border-top-color: var(--dpn-sliver) !important;
+}
+
+// Buttons
+.dpn-btn-secondary {
+  background: var(--dpn-secondary) !important;
+  border-color: var(--dpn-secondary) !important;
+  color: var(--dpn-white) !important;
+  &:hover {
+    color: var(--dpn-secondary) !important;
+    background: var(--dpn-white) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-outline-secondary {
+  background: var(--dpn-white) !important;
+  border-color: var(--dpn-secondary) !important;
+  color: var(--dpn-secondary) !important;
+  &:hover {
+    color: var(--dpn-white) !important;
+    background: var(--dpn-secondary) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-outline-primary {
+  background: var(--dpn-white) !important;
+  border-color: var(--dpn-primary) !important;
+  color: var(--dpn-primary) !important;
+  &:hover {
+    color: var(--dpn-white) !important;
+    background: var(--dpn-primary) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-primary {
+  background: var(--dpn-primary) !important;
+  border-color: var(--dpn-primary) !important;
+  color: var(--dpn-white) !important;
+  &:hover {
+    color: var(--dpn-primary) !important;
+    background: var(--dpn-white) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-outline-tomato {
+  background: var(--dpn-white) !important;
+  border-color: var(--dpn-tomato) !important;
+  color: var(--dpn-tomato) !important;
+  &:hover {
+    color: var(--dpn-white) !important;
+    background: var(--dpn-tomato) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-tomato {
+  background: var(--dpn-tomato) !important;
+  border-color: var(--dpn-tomato) !important;
+  color: var(--dpn-white) !important;
+  &:hover {
+    color: var(--dpn-tomato) !important;
+    background: var(--dpn-white) !important;
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--dpn-box-shadow) !important;
+    transition-duration: var(--dpn-transition) !important;
+  }
+  &:disabled {
+    opacity: 0.5 !important;
+    &:hover {
+      pointer-events: unset;
+    }
+  }
+}
+
+.dpn-btn-facebook {
+  color: var(--dpn-white);
+  background: #435f9f !important;
+  border-color: #435f9f !important;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Font Size Icon
+.dpn-icon-small {
+  font-size: 25px !important;
+}
+.dpn-icon-medium-small {
+  font-size: 50px !important;
+}
+.dpn-icon-medium {
+  font-size: 80px !important;
+}
+.dpn-icon-large {
+  font-size: 100px !important;
+}
+
+// Utils
+.dpn-text-uppercase {
+  text-transform: uppercase !important;
+}
+.dpn-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.dpn-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.dpn-text-underline {
+  &:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: var(--dpn-secondary) !important;
+  }
+}
+
+.dpn-font-bold {
+  font-weight: 600 !important;
+}
+
+.dct-icon-remove-img {
+  .ant-badge-count {
+    cursor: pointer;
+    margin: 15px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.dpn-border-radius-two {
+  border-radius: var(--dpn-border-radius-two) !important;
+}
