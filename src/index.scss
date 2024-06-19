@@ -1,6 +1,6 @@
 @import "./assets/scss/dpn-global-styles";
 @import 'bootstrap/dist/css/bootstrap.min.css';
-//@import "./assets/css/bootstrap.min.css";
+@import "./assets/css/bootstrap.min.css";
 //CSS & Bootstrap
 @import "./assets/css/style.css";
 //@import "./assets/js/bootstrap.bundle.min.js";
@@ -8,5 +8,5 @@
 //Font Awesome
 //@import "./assets/plugins/fontawesome/css/fontawesome.min.css";
 //@import "./assets/plugins/fontawesome/css/all.min.css";
-//@import '~bootstrap/dist/css/bootstrap.min.css';
-//@import '~bootstrap/dist/js/bootstrap.bundle.js';
+//@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+//@import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';

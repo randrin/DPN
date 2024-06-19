@@ -5,15 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import DpnRouters from "./routers/dpn-routers";
 import { FloatButton } from "antd";
 import { BrowserRouter } from "react-router-dom";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 
 const root = ReactDOM.createRoot(document.getElementById("dpn"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter basename="/">
-      <DpnRouters />
-      <FloatButton.BackTop />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter basename="/">
+    <DpnRouters />
+    <FloatButton.BackTop />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
