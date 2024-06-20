@@ -7,7 +7,10 @@ import { useState } from "react";
 import { login02, loginlogo } from "../../imagepath";
 
 import { Eye, EyeOff } from "feather-icons-react/build/IconComponents";
-import { END_POINT_FORGOT_PASSWORD } from "../../../routers/end-points";
+import {
+  END_POINT_ADMIN_DAHSBOARD,
+  END_POINT_FORGOT_PASSWORD,
+} from "../../../routers/end-points";
 import { Typography } from "antd";
 
 // import ReactPasswordToggleIcon from 'react-password-toggle-icon';
@@ -110,7 +113,7 @@ const Login = () => {
                         </div>
                         <div className="form-group login-btn">
                           <Link
-                            to="/admin-dashboard"
+                            to={END_POINT_ADMIN_DAHSBOARD}
                             className="btn btn-primary btn-block"
                           >
                             Login

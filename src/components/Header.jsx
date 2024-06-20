@@ -14,6 +14,7 @@ import {
   settingicon01,
   noteicon1,
 } from "./imagepath";
+import { END_POINT_LOGIN, END_POINT_SETTINGS } from "../routers/end-points";
 
 const Header = () => {
   const handlesidebar = () => {
@@ -250,16 +251,16 @@ const Header = () => {
               <Link className="dropdown-item" to="/edit-profile">
                 Edit Profile
               </Link>
-              <Link className="dropdown-item" to="/settings">
+              <Link className="dropdown-item" to={END_POINT_SETTINGS}>
                 Settings
               </Link>
-              <Link className="dropdown-item" to="/login">
+              <Link className="dropdown-item" to={END_POINT_LOGIN}>
                 Logout
               </Link>
             </div>
           </li>
           <li className="nav-item ">
-            <Link to="/settings" className="hasnotifications nav-link">
+            <Link to={END_POINT_SETTINGS} className="hasnotifications nav-link">
               <img src={settingicon01} alt="" />{" "}
             </Link>
           </li>
@@ -280,10 +281,10 @@ const Header = () => {
             <Link className="dropdown-item" to="edit-profile.html">
               Edit Profile
             </Link>
-            <Link className="dropdown-item" to="/settings">
+            <Link className="dropdown-item" to={END_POINT_SETTINGS}>
               Settings
             </Link>
-            <Link className="dropdown-item" to="/login">
+            <Link className="dropdown-item" to={END_POINT_LOGIN}>
               Logout
             </Link>
           </div>

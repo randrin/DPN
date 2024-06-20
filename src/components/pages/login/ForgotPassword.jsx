@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { login02, loginlogo } from "../../imagepath";
 import { Typography } from "antd";
+import { END_POINT_LOGIN } from "../../../routers/end-points";
 
 const ForgotPassword = () => {
   // Destructing
@@ -16,7 +17,7 @@ const ForgotPassword = () => {
             {/* Login logo */}
             <div className="col-lg-6 login-wrap">
               <div className="login-sec">
-                <div className="log-img"  style={{ position: "relative" }}>
+                <div className="log-img" style={{ position: "relative" }}>
                   <img className="img-fluid" src={login02} alt="Logo" />
                   <div
                     className="col dpn-home-top"
@@ -44,13 +45,13 @@ const ForgotPassword = () => {
                   <div className="login-right">
                     <div className="login-right-wrap">
                       <div className="account-logo">
-                        <Link to="/admin-dashboard">
+                        <Link to={END_POINT_LOGIN}>
                           <img src={loginlogo} alt="#" />
                         </Link>
                       </div>
                       <h2>Reset Password</h2>
                       {/* Form */}
-                      <form action="./login">
+                      <form>
                         <div className="form-group">
                           <label>
                             Email <span className="login-danger">*</span>
@@ -71,7 +72,7 @@ const ForgotPassword = () => {
                       <div className="next-sign">
                         <p className="account-subtitle">
                           Need an account?
-                          <Link to="/login"> Login</Link>
+                          <Link to={END_POINT_LOGIN}> Login</Link>
                         </p>
                       </div>
                     </div>
