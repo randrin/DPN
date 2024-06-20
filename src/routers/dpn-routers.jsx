@@ -14,6 +14,9 @@ import Admin_Dashboard from "../components/Dashboard/Admin";
 import Setting from "../components/settings";
 import SettingsChangePassword from "../components/settings/SettingsChangePassword";
 import SettingsSignature from "../components/settings/SettingsSignature";
+import DoctorList from "../components/Doctor/DoctorList";
+import AddDoctor from "../components/Doctor/AddDoctor";
+import DoctorProfile from "../components/Doctor/DoctorProfile";
 
 const DpnRouters = () => {
   return (
@@ -33,6 +36,10 @@ const DpnRouters = () => {
         path={END_POINT_SETTINGS_SIGNATURE}
         element={<SettingsSignature />}
       />
+      {/* Doctor  */}
+      <Route path="/doctorlist" element={<DoctorList />} />
+      <Route path="/add-doctor" element={<AddDoctor />} />
+      <Route path="/doctorprofile" element={<DoctorProfile />} />
     </Routes>
   );
 };

@@ -22,6 +22,11 @@ import {
   sidemenu,
 } from "./imagepath";
 import Scrollbars from "react-custom-scrollbars-2";
+import {
+  END_POINT_ADD_DOCTOR,
+  END_POINT_ADMIN_DAHSBOARD,
+  END_POINT_DOCTOR_LIST,
+} from "../routers/end-points";
 
 const Sidebar = (props) => {
   const [sidebar, setSidebar] = useState("");
@@ -94,11 +99,11 @@ const Sidebar = (props) => {
                     <li>
                       <Link
                         className={
-                          props?.activeClassName === "admin-dashboard"
+                          props?.activeClassName === END_POINT_ADMIN_DAHSBOARD.split("/")[1]
                             ? "active"
                             : ""
                         }
-                        to="/admin-dashboard"
+                        to={END_POINT_ADMIN_DAHSBOARD}
                       >
                         Admin Dashboard
                       </Link>
@@ -129,7 +134,7 @@ const Sidebar = (props) => {
                     </li>
                   </ul>
                 </li>
-                {/* <li className="submenu">
+                <li className="submenu">
                   <Link
                     to="#"
                     id="menu-item1"
@@ -152,7 +157,7 @@ const Sidebar = (props) => {
                     <li>
                       <Link
                         className={
-                          props?.activeClassName === "doctor-list"
+                          props?.activeClassName === END_POINT_DOCTOR_LIST.split("/")[1]
                             ? "active"
                             : ""
                         }
@@ -164,42 +169,18 @@ const Sidebar = (props) => {
                     <li>
                       <Link
                         className={
-                          props?.activeClassName === "add-doctor"
+                          props?.activeClassName === END_POINT_ADD_DOCTOR.split("/")[1]
                             ? "active"
                             : ""
                         }
-                        to="/add-doctor"
+                        to={END_POINT_ADD_DOCTOR}
                       >
                         Add Doctor
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        className={
-                          props?.activeClassName === "edit-doctor"
-                            ? "active"
-                            : ""
-                        }
-                        to="/editdoctor"
-                      >
-                        Edit Doctor
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={
-                          props?.activeClassName === "doctor-profile"
-                            ? "active"
-                            : ""
-                        }
-                        to="/doctorprofile"
-                      >
-                        Doctor Profile
-                      </Link>
-                    </li>
                   </ul>
                 </li>
-                <li className="submenu">
+                {/*  <li className="submenu">
                   <Link
                     to="#"
                     id="menu-item2"
