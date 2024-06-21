@@ -20,6 +20,11 @@ import {
   refreshicon,
   searchnormal,
 } from "../imagepath";
+import {
+    END_POINT_ADD_DOCTOR,
+  END_POINT_EDIT_DOCTOR,
+  END_POINT_PROFILE_DOCTOR,
+} from "../../routers/end-points";
 
 const DoctorList = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
@@ -229,11 +234,11 @@ const DoctorList = () => {
                 <i className="fas fa-ellipsis-v" />
               </Link>
               <div className="dropdown-menu dropdown-menu-end">
-                <Link className="dropdown-item" to="/editdoctor">
+                <Link className="dropdown-item" to={END_POINT_PROFILE_DOCTOR}>
                   <i className="far fa-eye me-2" />
                   View
                 </Link>
-                <Link className="dropdown-item" to="/editdoctor">
+                <Link className="dropdown-item" to="#">
                   <i
                     className={`fa fa-toggle-${
                       record.Status === "Active" ? "on" : "off"
@@ -241,7 +246,7 @@ const DoctorList = () => {
                   />
                   {record.Status === "Active" ? "Disable" : "Enable"}
                 </Link>
-                <Link className="dropdown-item" to="/editdoctor">
+                <Link className="dropdown-item" to={END_POINT_EDIT_DOCTOR}>
                   <i className="far fa-edit me-2" />
                   Edit
                 </Link>
@@ -261,6 +266,7 @@ const DoctorList = () => {
     },
   ];
 
+  // Render
   return (
     <>
       <Header />
@@ -316,7 +322,7 @@ const DoctorList = () => {
                               </div>
                               <div className="add-group">
                                 <Link
-                                  to="/add-doctor"
+                                  to={END_POINT_ADD_DOCTOR}
                                   className="btn btn-primary add-pluss ms-2"
                                 >
                                   <img src={plusicon} alt="#" />

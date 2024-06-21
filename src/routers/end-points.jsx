@@ -8,4 +8,6 @@ export const END_POINT_SETTINGS_CHANGE_PASSWORD = "/settingschangepassword";
 export const END_POINT_SETTINGS_SIGNATURE = "/settingssignature";
 export const END_POINT_DOCTOR_LIST = "/doctor-list";
 export const END_POINT_ADD_DOCTOR = "/add-doctor";
+export const END_POINT_EDIT_DOCTOR = "/edit-doctor";
+export const END_POINT_PROFILE_DOCTOR = "/profile-doctor";
 

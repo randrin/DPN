@@ -161,7 +161,7 @@ const Sidebar = (props) => {
                             ? "active"
                             : ""
                         }
-                        to="/doctorlist"
+                        to={END_POINT_DOCTOR_LIST}
                       >
                         Doctor List
                       </Link>

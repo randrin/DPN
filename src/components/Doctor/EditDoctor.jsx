@@ -6,7 +6,7 @@ import Select from "react-select";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
-const AddDoctor = () => {
+const EditDoctor = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [regions, setRegions] = useState([
@@ -83,7 +83,7 @@ const AddDoctor = () => {
                       <div className="row">
                         <div className="col-12">
                           <div className="form-heading">
-                            <h4>Doctor Details</h4>
+                            <h4>Update Doctor</h4>
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
@@ -97,6 +97,7 @@ const AddDoctor = () => {
                                   type="radio"
                                   name="gender"
                                   className="form-check-input"
+                                  defaultChecked="true"
                                 />
                                 Male
                               </label>
@@ -122,6 +123,7 @@ const AddDoctor = () => {
                               className="form-control"
                               type="text"
                               placeholder=""
+                              defaultValue="Daniel"
                             />
                           </div>
                         </div>
@@ -134,6 +136,7 @@ const AddDoctor = () => {
                               className="form-control"
                               type="text"
                               placeholder=""
+                              defaultValue="Bruk"
                             />
                           </div>
                         </div>
@@ -158,6 +161,7 @@ const AddDoctor = () => {
                               className="form-control"
                               type="text"
                               placeholder=""
+                              defaultValue="+1 23 456890"
                             />
                           </div>
                         </div>
@@ -170,6 +174,7 @@ const AddDoctor = () => {
                               className="form-control"
                               type="email"
                               placeholder=""
+                              defaultValue="example@email.com"
                             />
                           </div>
                         </div>
@@ -208,6 +213,7 @@ const AddDoctor = () => {
                               className="form-control datetimepicker"
                               onChange={onChange}
                               suffixIcon={null}
+                              //defaultValue={"2019-01-01"}
                               style={{
                                 borderColor: isClicked
                                   ? "#2E37A4"
@@ -247,7 +253,7 @@ const AddDoctor = () => {
                               Department <span className="login-danger">*</span>
                             </label>
                             <Select
-                              defaultValue={selectedOption}
+                              defaultValue={"Orthopedics"}
                               onChange={setSelectedOption}
                               options={department}
                               id="search-commodity"
@@ -292,7 +298,7 @@ const AddDoctor = () => {
                               <span className="login-danger">*</span>
                             </label>
                             <Select
-                              defaultValue={selectedOption}
+                              defaultValue={"Infertility"}
                               onChange={setSelectedOption}
                               options={specialization}
                               id="search-commodity"
@@ -339,7 +345,9 @@ const AddDoctor = () => {
                               className="form-control"
                               rows={2}
                               cols={30}
-                              defaultValue={""}
+                              defaultValue={
+                                "101, Elanxa Apartments, 340 N Madison Avenue"
+                              }
                             />
                           </div>
                         </div>
@@ -350,7 +358,7 @@ const AddDoctor = () => {
                             </label>
                             <Select
                               menuPosition={"fixed"}
-                              defaultValue={selectedOption}
+                              defaultValue={"Extrême-Nord"}
                               onChange={setSelectedOption}
                               options={regions}
                               menuPortalTarget={document.body}
@@ -451,7 +459,7 @@ const AddDoctor = () => {
                             </label>
                             <Select
                               menuPosition={"fixed"}
-                              defaultValue={selectedOption}
+                              defaultValue={"Logone-et-Chari"}
                               onChange={setSelectedOption}
                               options={regionDepartments}
                               menuPortalTarget={document.body}
@@ -501,6 +509,7 @@ const AddDoctor = () => {
                               className="form-control"
                               type="text"
                               placeholder=""
+                              defaultValue={91403}
                             />
                           </div>
                         </div>
@@ -514,7 +523,9 @@ const AddDoctor = () => {
                               className="form-control"
                               rows={3}
                               cols={30}
-                              defaultValue={""}
+                              defaultValue={
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                              }
                             />
                           </div>
                         </div>
@@ -594,4 +605,4 @@ const AddDoctor = () => {
   );
 };
 
-export default AddDoctor;
+export default EditDoctor;

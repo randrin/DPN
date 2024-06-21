@@ -1,19 +1,10 @@
+import FeatherIcon from "feather-icons-react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import {
-  Profileuser,
-  cameraicon,
-  doctor,
-  imagesend,
-  medalicon,
-  medalicon02,
-  medalicon03,
-  menuicon16,
-  profilebg,
-} from "../imagepath";
-import FeatherIcon from "feather-icons-react";
-import { Link } from "react-router-dom";
+import { HiPlusSmall } from "react-icons/hi2";
+import { cameraicon, doctor, doctor01, menuicon16 } from "../imagepath";
 
 const DoctorProfile = () => {
   return (
@@ -52,7 +43,7 @@ const DoctorProfile = () => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-12">
-                        <div className="about-info">
+                        {/* <div className="about-info">
                           <h4>
                             Doctor Profile{" "}
                             <span>
@@ -63,16 +54,13 @@ const DoctorProfile = () => {
                               </Link>
                             </span>
                           </h4>
-                        </div>
+                        </div> */}
                         <div className="doctor-profile-head">
-                          <div className="profile-bg-img">
-                            <img src={profilebg} alt="Profile" />
-                          </div>
                           <div className="row">
                             <div className="col-lg-4 col-md-4">
                               <div className="profile-user-box">
                                 <div className="profile-user-img">
-                                  <img src={Profileuser} alt="Profile" />
+                                  <img src={doctor01} alt="Profile" />
                                   <div className="form-group doctor-up-files profile-edit-icon mb-0">
                                     <div className="uplod d-flex">
                                       <label className="file-upload profile-upbtn mb-0">
@@ -90,7 +78,7 @@ const DoctorProfile = () => {
                             </div>
                             <div className="col-lg-4 col-md-4 d-flex align-items-center">
                               <div className="follow-group">
-                                <div className="doctor-follows">
+                                {/* <div className="doctor-follows">
                                   <h5>Followers</h5>
                                   <h4>850</h4>
                                 </div>
@@ -101,22 +89,30 @@ const DoctorProfile = () => {
                                 <div className="doctor-follows">
                                   <h5>Posts</h5>
                                   <h4>250</h4>
-                                </div>
+                                </div> */}
                               </div>
                             </div>
-                            <div className="col-lg-4 col-md-4 d-flex align-items-center">
+                            <div className="col-lg-4 col-md-5 d-flex align-items-center">
                               <div className="follow-btn-group">
                                 <button
                                   type="submit"
+                                  style={{
+                                    width: "auto",
+                                    minWidth: "130px !important",
+                                  }}
                                   className="btn btn-info follow-btns"
                                 >
-                                  Follow
+                                  <HiPlusSmall /> Education
                                 </button>
                                 <button
                                   type="submit"
+                                  style={{
+                                    width: "auto",
+                                    minWidth: "130px !important",
+                                  }}
                                   className="btn btn-info message-btns"
                                 >
-                                  Message
+                                  <HiPlusSmall /> Experience
                                 </button>
                               </div>
                             </div>
@@ -127,150 +123,7 @@ const DoctorProfile = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-4">
-                    <div className="doctor-personals-grp">
-                      <div className="card">
-                        <div className="card-body">
-                          <div className="heading-detail ">
-                            <h4 className="mb-3">About me</h4>
-                            <p>
-                              Hello I am Dr. Bruce Willis a Gynaecologist in
-                              Sanjivni Hospital Surat. I love to work with all
-                              my hospital staff and seniour doctors.
-                            </p>
-                          </div>
-                          <div className="about-me-list">
-                            <ul className="list-space">
-                              <li>
-                                <h4>Gender</h4>
-                                <span>Female</span>
-                              </li>
-                              <li>
-                                <h4>Operation Done</h4>
-                                <span>30+</span>
-                              </li>
-                              <li>
-                                <h4>Designation</h4>
-                                <span>Sr. Doctor</span>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="doctor-personals-grp">
-                      <div className="card">
-                        <div className="card-body">
-                          <div className="heading-detail">
-                            <h4>Skills:</h4>
-                          </div>
-                          <div className="skill-blk">
-                            <div className="skill-statistics">
-                              <div className="skills-head">
-                                <h5>Operations</h5>
-                                <p>45%</p>
-                              </div>
-                              <div className="progress mb-0">
-                                <div
-                                  className="progress-bar bg-operations"
-                                  role="progressbar"
-                                  style={{ width: "45%" }}
-                                  aria-valuenow={45}
-                                  aria-valuemin={0}
-                                  aria-valuemax={100}
-                                />
-                              </div>
-                            </div>
-                            <div className="skill-statistics">
-                              <div className="skills-head">
-                                <h5>Patient Care</h5>
-                                <p>85%</p>
-                              </div>
-                              <div className="progress mb-0">
-                                <div
-                                  className="progress-bar bg-statistics"
-                                  role="progressbar"
-                                  style={{ width: "85%" }}
-                                  aria-valuenow={85}
-                                  aria-valuemin={0}
-                                  aria-valuemax={100}
-                                />
-                              </div>
-                            </div>
-                            <div className="skill-statistics">
-                              <div className="skills-head">
-                                <h5>Endoscopic </h5>
-                                <p>65%</p>
-                              </div>
-                              <div className="progress mb-0">
-                                <div
-                                  className="progress-bar bg-endoscopic"
-                                  role="progressbar"
-                                  style={{ width: "65%" }}
-                                  aria-valuenow={65}
-                                  aria-valuemin={0}
-                                  aria-valuemax={100}
-                                />
-                              </div>
-                            </div>
-                            <div className="skill-statistics">
-                              <div className="skills-head">
-                                <h5>Patient Visit </h5>
-                                <p>90%</p>
-                              </div>
-                              <div className="progress mb-0">
-                                <div
-                                  className="progress-bar bg-visit"
-                                  role="progressbar"
-                                  style={{ width: "90%" }}
-                                  aria-valuenow={90}
-                                  aria-valuemin={0}
-                                  aria-valuemax={100}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="doctor-personals-grp">
-                      <div className="card">
-                        <div className="card-body">
-                          <div className="heading-detail">
-                            <h4>Speciality</h4>
-                          </div>
-                          <div className="personal-activity">
-                            <div className="personal-icons status-grey">
-                              <img src={medalicon} alt="#" />
-                            </div>
-                            <div className="views-personal">
-                              <h4>Proffesionals</h4>
-                              <h5>Certified Skin Treatment</h5>
-                            </div>
-                          </div>
-                          <div className="personal-activity">
-                            <div className="personal-icons status-green">
-                              <img src={medalicon02} alt="#" />
-                            </div>
-                            <div className="views-personal">
-                              <h4>Certified</h4>
-                              <h5>Cold Laser Operation</h5>
-                            </div>
-                          </div>
-                          <div className="personal-activity mb-0">
-                            <div className="personal-icons status-orange">
-                              <img src={medalicon03} alt="#" />
-                            </div>
-                            <div className="views-personal">
-                              <h4>Medication Laser</h4>
-                              <h5>Hair Lose Product</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-8">
+                  <div className="col">
                     <div className="doctor-personals-grp">
                       <div className="card">
                         <div className="card-body">
@@ -446,285 +299,6 @@ const DoctorProfile = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="notification-box">
-            <div className="msg-sidebar notifications msg-noti">
-              <div className="topnav-dropdown-header">
-                <span>Messages</span>
-              </div>
-              <div className="drop-scroll msg-list-scroll" id="msg_list">
-                <ul className="list-box">
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">R</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">Richard Miles </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item new-message">
-                        <div className="list-left">
-                          <span className="avatar">J</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">John Doe</span>
-                          <span className="message-time">1 Aug</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">T</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">M</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">Mike Litorus</span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">C</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">D</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">B</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">R</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">C</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author"> Claire Mapes </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">M</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">Melita Faucher</span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">J</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">Jeffery Lalor</span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">L</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">Loren Gatlin</span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="chat.html">
-                      <div className="list-item">
-                        <div className="list-left">
-                          <span className="avatar">T</span>
-                        </div>
-                        <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
-                          <span className="message-time">12:28 AM</span>
-                          <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="topnav-dropdown-footer">
-                <Link to="chat.html">See all messages</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          id="delete_patient"
-          className="modal fade delete-modal"
-          role="dialog"
-        >
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-body text-center">
-                <img src={imagesend} alt="#" width={50} height={46} />
-                <h3>Are you sure want to delete this ?</h3>
-                <div className="m-t-20">
-                  {" "}
-                  <Link
-                    to="#"
-                    className="btn btn-white me-2"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </Link>
-                  <button type="submit" className="btn btn-danger">
-                    Delete
-                  </button>
                 </div>
               </div>
             </div>
