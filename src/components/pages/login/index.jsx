@@ -50,7 +50,7 @@ const Login = () => {
                       DPN
                     </Title>
                     <Paragraph className="dpn-white dpn-home-top-description text-center">
-                      Dossier de Patients Numérisés
+                      Dossier Patient Numérique
                     </Paragraph>
                   </div>
                 </div>
